@@ -1,0 +1,23 @@
+# Python & Virtualenv
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Cache & Kaggle
+.cache/
+*.zip
+*.tar.gz
+

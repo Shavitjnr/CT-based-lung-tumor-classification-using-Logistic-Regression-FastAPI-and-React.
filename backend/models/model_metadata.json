@@ -1,0 +1,462 @@
+{
+  "model_name": "LungScan AI Logistic Regression Classifier",
+  "model_version": "1.0.0",
+  "algorithm": "Logistic Regression with L1/L2 Regularization",
+  "training_date": "2026-11-03T14:06:34.532393",
+  "dataset": {
+    "name": "IQ-OTH/NCCD Lung Cancer Dataset",
+    "source_institution": "Iraq-Oncology Teaching Hospital / National Center for Cancer Diseases",
+    "modality": "Chest CT (Siemens SOMATOM Scanner)",
+    "total_binary_images": 649,
+    "benign_count": 102,
+    "malignant_count": 547,
+    "normal_count_excluded": 416,
+    "duplicates_removed": 32
+  },
+  "hyperparameters": {
+    "best_params": {
+      "classifier__C": 10.0,
+      "classifier__penalty": "l2",
+      "classifier__solver": "lbfgs"
+    },
+    "class_weight": "balanced",
+    "max_iter": 3000,
+    "intercept": 8.7683
+  },
+  "evaluation_metrics": {
+    "accuracy": 0.9615,
+    "precision": 1.0,
+    "recall_sensitivity": 0.9545,
+    "specificity": 1.0,
+    "f1_score": 0.9767,
+    "roc_auc": 0.9964,
+    "brier_score": 0.0273,
+    "cv_mean_roc_auc": 0.9967,
+    "cv_std_roc_auc": 0.003,
+    "cv_mean_train_roc_auc": 0.9974
+  },
+  "confusion_matrix": {
+    "true_negatives": 20,
+    "false_positives": 0,
+    "false_negatives": 5,
+    "true_positives": 105,
+    "total_test": 130,
+    "matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        5,
+        105
+      ]
+    ]
+  },
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0,
+      "threshold": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.0091,
+      "threshold": 1.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.9818,
+      "threshold": 0.167
+    },
+    {
+      "fpr": 0.2,
+      "tpr": 0.9818,
+      "threshold": 0.037
+    },
+    {
+      "fpr": 0.2,
+      "tpr": 1.0,
+      "threshold": 0.0141
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0,
+      "threshold": 0.0
+    }
+  ],
+  "pr_curve": [
+    {
+      "recall": 1.0,
+      "precision": 0.8462,
+      "threshold": 0.0
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.873,
+      "threshold": 0.0012
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.9016,
+      "threshold": 0.0037
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.9322,
+      "threshold": 0.0065
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.9649,
+      "threshold": 0.0141
+    },
+    {
+      "recall": 0.9818,
+      "precision": 0.9818,
+      "threshold": 0.0651
+    },
+    {
+      "recall": 0.9636,
+      "precision": 1.0,
+      "threshold": 0.3777
+    },
+    {
+      "recall": 0.9273,
+      "precision": 1.0,
+      "threshold": 0.9238
+    },
+    {
+      "recall": 0.8909,
+      "precision": 1.0,
+      "threshold": 0.9466
+    },
+    {
+      "recall": 0.8545,
+      "precision": 1.0,
+      "threshold": 0.9662
+    },
+    {
+      "recall": 0.8182,
+      "precision": 1.0,
+      "threshold": 0.9808
+    },
+    {
+      "recall": 0.7818,
+      "precision": 1.0,
+      "threshold": 0.9961
+    },
+    {
+      "recall": 0.7455,
+      "precision": 1.0,
+      "threshold": 0.9985
+    },
+    {
+      "recall": 0.7091,
+      "precision": 1.0,
+      "threshold": 0.9989
+    },
+    {
+      "recall": 0.6727,
+      "precision": 1.0,
+      "threshold": 0.9991
+    },
+    {
+      "recall": 0.6364,
+      "precision": 1.0,
+      "threshold": 0.9993
+    },
+    {
+      "recall": 0.6,
+      "precision": 1.0,
+      "threshold": 0.9994
+    },
+    {
+      "recall": 0.5636,
+      "precision": 1.0,
+      "threshold": 0.9995
+    },
+    {
+      "recall": 0.5273,
+      "precision": 1.0,
+      "threshold": 0.9996
+    },
+    {
+      "recall": 0.4909,
+      "precision": 1.0,
+      "threshold": 0.9997
+    },
+    {
+      "recall": 0.4545,
+      "precision": 1.0,
+      "threshold": 0.9998
+    },
+    {
+      "recall": 0.4182,
+      "precision": 1.0,
+      "threshold": 0.9999
+    },
+    {
+      "recall": 0.3818,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.3455,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.3091,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.2727,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.2364,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.2,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.1636,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.1273,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.0909,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.0545,
+      "precision": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "recall": 0.0182,
+      "precision": 1.0,
+      "threshold": 1.0
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "lbp_std",
+      "coefficient": -7.2899,
+      "abs_weight": 7.2899,
+      "odds_ratio": 0.0007,
+      "direction": "Pushes Benign",
+      "description": "Standard deviation of Local Binary Patterns representing surface roughness"
+    },
+    {
+      "feature": "glcm_homogeneity",
+      "coefficient": 4.6602,
+      "abs_weight": 4.6602,
+      "odds_ratio": 105.6524,
+      "direction": "Pushes Malignant",
+      "description": "GLCM Homogeneity indicating structural smoothness and uniformity"
+    },
+    {
+      "feature": "edge_mean_magnitude",
+      "coefficient": 3.6301,
+      "abs_weight": 3.6301,
+      "odds_ratio": 37.7157,
+      "direction": "Pushes Malignant",
+      "description": "Mean Sobel gradient magnitude reflecting boundary sharpness/spiculation"
+    },
+    {
+      "feature": "lbp_entropy",
+      "coefficient": -2.0636,
+      "abs_weight": 2.0636,
+      "odds_ratio": 0.127,
+      "direction": "Pushes Benign",
+      "description": "Shannon entropy of local binary pattern code distribution"
+    },
+    {
+      "feature": "lbp_uniformity",
+      "coefficient": -1.6605,
+      "abs_weight": 1.6605,
+      "odds_ratio": 0.19,
+      "direction": "Pushes Benign",
+      "description": "Proportion of uniform micro-patterns across the scan"
+    },
+    {
+      "feature": "glcm_asm",
+      "coefficient": -1.6442,
+      "abs_weight": 1.6442,
+      "odds_ratio": 0.1932,
+      "direction": "Pushes Benign",
+      "description": "GLCM Angular Second Moment reflecting pixel pair regularity"
+    },
+    {
+      "feature": "mean_intensity",
+      "coefficient": 1.454,
+      "abs_weight": 1.454,
+      "odds_ratio": 4.2803,
+      "direction": "Pushes Malignant",
+      "description": "Average CT attenuation/grayscale intensity across the scan"
+    },
+    {
+      "feature": "percentile_75",
+      "coefficient": -1.4288,
+      "abs_weight": 1.4288,
+      "odds_ratio": 0.2396,
+      "direction": "Pushes Benign",
+      "description": "75th percentile of normalized CT attenuation"
+    },
+    {
+      "feature": "skewness",
+      "coefficient": -1.4093,
+      "abs_weight": 1.4093,
+      "odds_ratio": 0.2443,
+      "direction": "Pushes Benign",
+      "description": "Asymmetry of pixel intensity distribution (positive = bright lesion dominance)"
+    },
+    {
+      "feature": "percentile_25",
+      "coefficient": -1.3546,
+      "abs_weight": 1.3546,
+      "odds_ratio": 0.2581,
+      "direction": "Pushes Benign",
+      "description": "25th percentile of normalized CT attenuation"
+    },
+    {
+      "feature": "iqr_intensity",
+      "coefficient": -1.3208,
+      "abs_weight": 1.3208,
+      "odds_ratio": 0.2669,
+      "direction": "Pushes Benign",
+      "description": "Interquartile range (IQR) of CT intensity spread"
+    },
+    {
+      "feature": "std_intensity",
+      "coefficient": 1.2241,
+      "abs_weight": 1.2241,
+      "odds_ratio": 3.4009,
+      "direction": "Pushes Malignant",
+      "description": "Standard deviation of CT attenuation reflecting tissue heterogeneity"
+    },
+    {
+      "feature": "shannon_entropy",
+      "coefficient": -1.0034,
+      "abs_weight": 1.0034,
+      "odds_ratio": 0.3666,
+      "direction": "Pushes Benign",
+      "description": "Shannon information entropy measuring gray-level randomness and complexity"
+    },
+    {
+      "feature": "parenchyma_attenuation_ratio",
+      "coefficient": 0.9592,
+      "abs_weight": 0.9592,
+      "odds_ratio": 2.6096,
+      "direction": "Pushes Malignant",
+      "description": "Proportion of high-density tissue within the segmented lung fields"
+    },
+    {
+      "feature": "glcm_energy",
+      "coefficient": -0.8248,
+      "abs_weight": 0.8248,
+      "odds_ratio": 0.4383,
+      "direction": "Pushes Benign",
+      "description": "GLCM Energy measuring texture uniformity and orderliness"
+    },
+    {
+      "feature": "glcm_contrast",
+      "coefficient": -0.7771,
+      "abs_weight": 0.7771,
+      "odds_ratio": 0.4598,
+      "direction": "Pushes Benign",
+      "description": "GLCM Contrast measuring local intensity variations between voxel pairs"
+    },
+    {
+      "feature": "edge_density",
+      "coefficient": -0.5637,
+      "abs_weight": 0.5637,
+      "odds_ratio": 0.5691,
+      "direction": "Pushes Benign",
+      "description": "Fraction of sharp edge pixels representing pleural tags or lesion boundaries"
+    },
+    {
+      "feature": "glcm_correlation",
+      "coefficient": 0.3254,
+      "abs_weight": 0.3254,
+      "odds_ratio": 1.3846,
+      "direction": "Pushes Malignant",
+      "description": "GLCM Correlation measuring linear spatial dependencies between pixels"
+    },
+    {
+      "feature": "kurtosis",
+      "coefficient": -0.1449,
+      "abs_weight": 0.1449,
+      "odds_ratio": 0.8651,
+      "direction": "Pushes Benign",
+      "description": "Peakedness and heavy tails of CT attenuation histogram"
+    },
+    {
+      "feature": "glcm_dissimilarity",
+      "coefficient": -0.1298,
+      "abs_weight": 0.1298,
+      "odds_ratio": 0.8783,
+      "direction": "Pushes Benign",
+      "description": "GLCM Dissimilarity quantifying average difference between adjacent pixels"
+    },
+    {
+      "feature": "lbp_mean",
+      "coefficient": 0.1184,
+      "abs_weight": 0.1184,
+      "odds_ratio": 1.1257,
+      "direction": "Pushes Malignant",
+      "description": "Mean value of uniform Local Binary Patterns (micro-texture)"
+    }
+  ],
+  "feature_names": [
+    "mean_intensity",
+    "std_intensity",
+    "skewness",
+    "kurtosis",
+    "shannon_entropy",
+    "percentile_25",
+    "percentile_75",
+    "iqr_intensity",
+    "glcm_contrast",
+    "glcm_dissimilarity",
+    "glcm_homogeneity",
+    "glcm_energy",
+    "glcm_correlation",
+    "glcm_asm",
+    "lbp_mean",
+    "lbp_std",
+    "lbp_entropy",
+    "lbp_uniformity",
+    "edge_density",
+    "edge_mean_magnitude",
+    "parenchyma_attenuation_ratio"
+  ],
+  "classes": {
+    "0": {
+      "name": "Benign",
+      "label": 0,
+      "description": "Non-cancerous pulmonary nodule or benign inflammatory lesion",
+      "clinical_guidance": "Usually presents with well-circumscribed borders, homogeneous attenuation, and lower spatial entropy."
+    },
+    "1": {
+      "name": "Malignant",
+      "label": 1,
+      "description": "Cancerous lung neoplasm / pulmonary carcinoma",
+      "clinical_guidance": "Characterized by spiculation, micro-texture irregularity, heterogeneous CT attenuation, and invasiveness."
+    }
+  },
+  "clinical_disclaimer": "This experimental machine-learning prototype is developed for educational and academic research evaluation. It does NOT constitute medical advice, diagnosis, or treatment planning."
+}
